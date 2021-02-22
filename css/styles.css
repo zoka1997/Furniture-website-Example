@@ -1,0 +1,230 @@
+@charset "utf-8";
+/*CSS Document*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-1 {
+  background-color: whitesmoke;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding-bottom: 10px;
+}
+
+.bg-2 {
+    background-image: url("../images/bg1-sofa.jpg");
+    background-repeat: no-repeat;
+    height: 667px;
+    position: relative;
+    background-size: cover;
+    z-index: -1;
+}
+
+.bg-3 {
+    background-color: grey;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bg-4 {
+  background-color: rgb(233, 217, 217);
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.bg-5 {
+  background-image: url("../images/bg-5 living room.jpg");
+  background-repeat: no-repeat;
+  height: 660px;
+  position: relative;
+  background-size: cover;
+  z-index: -1;
+}
+
+.formsss {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(255, 165, 0, 0.5);
+}
+
+.formsss h4 {
+  margin-top: 200px;
+  font-size: 60px;
+  color: white;
+  text-shadow: 3px 2px 1px grey;
+}
+
+
+.formsss p {
+  font-size: 45px;
+  color: white;
+  text-shadow: 3px 2px 1px black;
+}
+
+.bg-6 {
+  background-color: black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about h4 {
+  text-shadow: 3px 2px 1px white;
+  font-size: 40px;
+}
+
+.about p {
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#section {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(255, 165, 0, 0.5);
+}
+
+.text h2 {
+    font-family: Palatino;
+    margin-top: 300px;
+    color: white;
+    text-shadow: 3px 1px 1px grey;
+    font-size: 70px;
+    letter-spacing: 2px;
+}
+
+.text button {
+  margin-top: 20px;
+  border-radius: 8px 6px;
+  padding: 5px;
+  background-color: white;
+}
+
+.text button a {
+  color: black;
+}
+
+.text button a:active {
+  color: red;
+}
+
+.logo {
+    float:right;
+    margin-top: 6px;
+    margin-right: -4px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: orangered;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+
+  .sidenav a {
+      padding:  8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: black;
+      display: block;
+      transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: white;
+  }
+
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+  span img {
+      margin-top: 25px;
+      margin-left: 20px;
+      cursor: pointer;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-container img {
+       margin-right: 40px;
+       margin-bottom: 30px;
+       border: 5px groove white;
+       border-radius: 10px 10px;
+  }
+
+  .footer h5 {
+    color: white;
+  }
+
+  #time {
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 600px) {
+    .about p {
+      text-align: justify;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .text h2 {
+    font-family: Palatino;
+    margin-top: 300px;
+    color: white;
+    text-shadow: 3px 1px 1px grey;
+    font-size: 60px;
+}
+.flex-container {
+  justify-content: center;
+  margin-left: 32px;
+}
+
+  }
